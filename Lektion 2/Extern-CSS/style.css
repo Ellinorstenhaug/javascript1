@@ -1,0 +1,14 @@
+body {
+    color: #008080;
+    background: url("../Images/background.jpg") no-repeat;
+    background-size: 100%;
+    text-align: center;
+}
+
+.container {
+    margin: 10vh;
+}
+
+h1:hover {
+    color: #005252;
+}
