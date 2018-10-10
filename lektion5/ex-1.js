@@ -1,3 +1,4 @@
+//lektion5/ex-1.js
 // Arbeta med arrayer
 
 //skapa en tom array

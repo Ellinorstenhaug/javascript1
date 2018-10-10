@@ -1,3 +1,4 @@
+//lektion6/main.js
 //Funktioner
 
 //All logik i samma dokument

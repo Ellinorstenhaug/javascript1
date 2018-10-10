@@ -1,3 +1,4 @@
+//lektion 4/test2/main.js
 // Arbeta med primitiva typer (datatyper)
 
 //1. String

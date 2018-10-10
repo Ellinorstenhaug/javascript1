@@ -1,3 +1,4 @@
+//Lektion 2/extern-CSS/main.js
 document.getElementById("p2").style.color = "blue";
 var classIndex = document.getElementsByClassName("paragraf");
 // classIndex [0].style.color="purple";

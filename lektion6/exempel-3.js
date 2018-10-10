@@ -1,3 +1,5 @@
+//lektion6/exempel-3.js
+
 // hej();
 
 // hej2(); //Anropa anonym funktion

@@ -1,3 +1,4 @@
+//lektion6/functions.js
 //Deklarera en funktion
 
 //hej(); GÅR BRA
