@@ -4,7 +4,7 @@
 //           car.model=500                  car.drive()
 //           car.weight=850kg               car.brake()
 //           car.color = white              car.stop()
-
+"use strict";
 let car = {
     //Egenskaper, properties
     name:"fiat",
@@ -81,3 +81,14 @@ function swap() {
 console.log(x, y);
 swap()
 console.log(x, y)
+
+console.log("------------");
+
+let a;
+let b;
+function swap2 (a, b) {
+    b = [a, a=b][0];
+    return [a, b]
+}
+
+console.log(swap2(1,2));
