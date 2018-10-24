@@ -9,6 +9,14 @@
 </head>
 <body>
     <div id="clock"></div>
+    <script>
+    function update() {
+        let t = new Date();
+        return `${t.getHours()}:${t.getMinutes()}:${t.getSeconds()}`;
+    }
+    document.getElementById('clock').innerHTML = update();
+    setInterval(update, 1000);
+    </script>
     <script src="ovningar.js"></script>
 </body>
 </html>

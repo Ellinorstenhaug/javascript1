@@ -23,29 +23,26 @@ console.log("------------ÖVNING 2------------------------------------");
 
 let arrayen = [4, 6, 78, 9, 6, 32];
 
-function maxValue(arrayen) {
+function maxArray(arrayen) {
     return Math.max(...arrayen);
 }
-console.log(maxValue(arrayen)); //78
+console.log(maxArray(arrayen)); //78
 
 console.log("------------ÖVNING 3------------------------------------");
 //Övning 3
 //Visa aktuellt datum i detta format YYYY-MM-DD t.ex.2018-10-12
 
 let today = new Date;
-let datum = `${today.getFullYear()}-${today.getMonth() +1}-${today.getDate()}`
-console.log(datum);
+console.log(`${today.getFullYear()}-${today.getMonth() +1}-${today.getDate()}`);
 
 console.log("------------ÖVNING 4------------------------------------");
 //ÖVNING 4
 //Visa klockan i detta format HH:MM:SS t.ex. 14:05:10
-let klocka = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`
-console.log(klocka);
+console.log(`${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`);
 
 console.log("------------ÖVNING 5------------------------------------");
 //Visa datum i detta format Dag den xx månad år t.ex. Onsdag den 17 oktober 2018 
 //Tips: Använd arrayer för att lagra veckodagar och månader.
-
 
 let D = new Date;
 let months = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"];
@@ -54,8 +51,6 @@ let days = ["Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "Sön
 let månad = months[D.getMonth()];
 let dag = days[D.getDay()];
 console.log(`${dag}en den ${D.getDate()} ${månad} ${D.getFullYear()}`)
-
-
 
 console.log("------------ÖVNING 6------------------------------------");
 //Skapa en live digital klocka och visa den i webbläsaren!
@@ -74,11 +69,12 @@ console.log("------------ÖVNING 7------------------------------------");
 //• Avståndsformeln kan användas för att beräkna avståndet mellan två punkter i ett koordinatsystem.
 //• Skriv ett program som läser in två punkter och beräknar avståndet mellan punkterna
 
-let p1 = [2, 2];
-let p2 = [4, 4];
+let p1 = [4, 20];
+let p2 = [8, 23];
 
 function distanceFormula(p1, p2) {
     let distance = Math.sqrt(Math.pow((p2[0] - p1[0]), 2) + Math.pow((p2[1] - p1[1]), 2));
     return distance.toFixed(2);
 }
 console.log(distanceFormula(p1, p2));
+
