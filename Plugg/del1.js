@@ -251,3 +251,11 @@ function u10() {
     tid = tid.toTimeString().substring(0, 9)
     document.getElementById("result").innerHTML = tid;
 }
+let D = new Date;
+let months = ["Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli", "Augusti", "September", "Oktober", "November", "December"];
+let days = ["Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "Söndag"];
+
+let månad = months[D.getMonth()];
+let dag = days[D.getDay()];
+console.log(`${dag}en den ${D.getDate()} ${månad} ${D.getFullYear()}`)
+

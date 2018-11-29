@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<!-- <body onload="alert('Hello Events!')"> -->
+
+<body>
+    <div class="wrapper">
+        <h1>HTML Event Attributes</h1>
+        <div class="ex1">
+            <h2>Exempel 1</h2>
+            <button onclick="document.body.bgColor='red'">Red</button>
+            <button onclick="document.body.bgColor='teal'">Teal</button>
+            <button onclick="document.body.bgColor='white'">White</button>
+            <button onmouseover="document.body.bgColor='black'" onmouseout="document.body.bgColor='white'">Violet</button>
+        </div>
+        <div class="ex2">
+            <h2>Exempel 2</h2>
+            <p></p>
+            <p id="demo"></p>
+            <p id="demo1"></p>
+            <p id="demo2"></p>
+            <button onclick="changeFirstParagraphText()">Click me to change first P!</button>
+            <button onclick="changeText('demo1'); changeColor('demo1','lightblue')">Click me to change P with id demo1!</button>
+            <button onclick="changeText('demo2'); changeColor('demo2','skyblue')">Click me to change P with id demo2!</button>
+        </div>
+
+        <div class="ex4">
+            <h2>Exempel 3 (4?)</h2>
+            <button onmouseover="hideElementById('ex4demo1')" onmouseout="showElementById('ex4demo1')">Visa/dölj</button>
+            <p id="ex4demo1">Lite text och annat smått och gott</p>
+            <p id="ex4demo">Dölj texten genom att klicka på knappen nedan!</p>
+            <button onclick="hideElementById('ex4demo')">Dölj</button>
+            <button onclick="showElementById('ex4demo')">Visa</button>
+            <button onmouseover="hideElementById('ex4demo')"">Dölj</button>
+
+        <button onmouseover="
+                showElementById('ex4demo')"">Visa</button>
+
+        </div>
+        <div class="ex5">
+            <h2>Exempel 5</h2>
+            <p onclick="this.style.display = 'none'">Dölj texten genom att klicka här!</p>
+            <p id="exempel"> Dölj texten genom att klicka <span onclick="hideElementById('exempel')">här!</span></p>
+        </div>
+        <div class="ex6">
+            <h2>Exempel 6</h2>
+            <p onmousemove="this.style.color = 'teal'" onmouseout="this.style.color='black'">Peka här för att ändra
+                färg!</p>
+        </div>
+        <div class="ex7">
+            <h2>Exempel 7</h2>
+            <button onclick="getTime();">Visa klockan!</button>
+            <h3 id="time"></h3>
+        </div>
+    </div>
+
+    
+    <script src="HTMLevent.js"></script>
+</body>
+
+</html>
